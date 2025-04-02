@@ -6,6 +6,11 @@ describe('Hexadecimal Calculator Functions', () => {
     expect(add('1F', '1')).toBe('20');
   });
 
+  test('adds two numbers', () => {  
+    expect(add('A', '5')).toBe('F');
+    expect(add('1F', '1')).toBe('20');
+  });
+
   test('subtracts two hexadecimal numbers (no negatives)', () => {
     expect(subtract('A', '5')).toBe('5');
     expect(subtract('10', '10')).toBe('0');
