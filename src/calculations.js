@@ -21,8 +21,8 @@ function validateOutput(result) {
 }
 
 export function add(a, b) {
-  validateInput(a);
   validateInput(b);
+  validateInput(a);
   const result = fromHex(a) + fromHex(b);
   return validateOutput(result);
 }
