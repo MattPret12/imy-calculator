@@ -21,8 +21,9 @@ function validateOutput(result) {
 }
 
 export function add(a, b) {
-  validateInput(a);
+
   validateInput(b);
+  validateInput(a);
   const result = fromHex(a) + fromHex(b);
   return validateOutput(result);
 }
@@ -50,3 +51,5 @@ export function divide(a, b) {
   const result = Math.floor(fromHex(a) / divisor);
   return validateOutput(result);
 }
+
+
